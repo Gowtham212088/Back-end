@@ -27,7 +27,7 @@ const client = await createConnection();
 
 // Creating a server to get a details on Mongodb (Method-GET)
  
-app.get("/", async (request, response) => {
+app.get("/",  (request, response) => {
 
   response.send("Welcome to Rentify App 📷 💻");
 });
