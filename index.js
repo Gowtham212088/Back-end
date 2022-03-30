@@ -26,6 +26,12 @@ async function createConnection() {
 const client = await createConnection();
 
 // Creating a server to get a details on Mongodb (Method-GET)
+ 
+app.get("/", async (request, response) => {
+
+  response.send("Welcome to Rentify App 📷 💻");
+});
+
 app.get("/products/:productType", async (request, response) => {
   const { productType } = request.params;
 
